@@ -1,0 +1,102 @@
+  <div class="grid">
+    <article class="card" data-game="snake">
+      <div class="thumb">
+        <!-- SVG thumbnail -->
+        <svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid slice">
+          <rect width="100%" height="100%" fill="#071428"/>
+          <g transform="translate(16,12)">
+            <rect x="0" y="0" width="168" height="96" rx="8" fill="#0d2233" />
+            <g transform="translate(8,8)">
+              <rect width="152" height="80" fill="#071428"/>
+              <g fill="#19a3ff">
+                <rect x="8" y="8" width="8" height="8" rx="2"/>
+                <rect x="24" y="8" width="8" height="8" rx="2"/>
+                <rect x="40" y="8" width="8" height="8" rx="2"/>
+                <rect x="56" y="8" width="8" height="8" rx="2"/>
+                <rect x="56" y="24" width="8" height="8" rx="2"/>
+                <rect x="56" y="40" width="8" height="8" rx="2"/>
+                <rect x="72" y="40" width="8" height="8" rx="2"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <h3>Snake</h3>
+      <button class="play-btn">Play</button>
+    </article>
+
+    <article class="card" data-game="pong">
+      <div class="thumb">
+        <svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid slice">
+          <rect width="100%" height="100%" fill="#071428"/>
+          <g transform="translate(16,12)">
+            <rect x="0" y="0" width="168" height="96" rx="8" fill="#0d2233" />
+            <g transform="translate(8,8)">
+              <rect width="152" height="80" fill="#071428"/>
+              <g stroke="#19a3ff" stroke-width="3" fill="none">
+                <line x1="76" y1="10" x2="76" y2="70"/>
+                <circle cx="40" cy="40" r="6" fill="#19a3ff"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <h3>Pong</h3>
+      <button class="play-btn">Play</button>
+    </article>
+
+    <article class="card" data-game="breakout">
+      <div class="thumb">
+        <svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid slice">
+          <rect width="100%" height="100%" fill="#071428"/>
+          <g transform="translate(16,12)">
+            <rect x="0" y="0" width="168" height="96" rx="8" fill="#0d2233" />
+            <g transform="translate(8,8)">
+              <rect width="152" height="80" fill="#071428"/>
+              <g fill="#19a3ff">
+                <rect x="12" y="10" width="24" height="12" rx="2"/>
+                <rect x="40" y="10" width="24" height="12" rx="2"/>
+                <rect x="68" y="10" width="24" height="12" rx="2"/>
+                <rect x="96" y="10" width="24" height="12" rx="2"/>
+                <rect x="60" y="54" width="40" height="8" rx="4" fill="#ffffff"/>
+                <circle cx="92" cy="36" r="5" fill="#19a3ff"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <h3>Breakout</h3>
+      <button class="play-btn">Play</button>
+    </article>
+  </div>
+</section>
+
+<!-- Game pages -->
+<section id="game-screen" class="page">
+  <div class="game-header">
+    <button id="backBtn" class="link">← Back</button>
+    <div class="game-info">
+      <h2 id="game-title">Game</h2>
+      <div class="scoreboard">
+        <span>Score: <span id="score">0</span></span>
+        <span>Best: <span id="best">0</span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-area">
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+    <div class="controls" id="touchControls">
+      <button id="leftBtn">◀</button>
+      <button id="upBtn">▲</button>
+      <button id="downBtn">▼</button>
+      <button id="rightBtn">▶</button>
+      <button id="actionBtn">Action</button>
+    </div>
+  </div>
+
+  <div class="instructions" id="instructions">
+    <p>Keyboard controls shown per game. Touch buttons available on mobile.</p>
+    <p id="game-controls"></p>
+  </div>
+</section>
